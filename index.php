@@ -18,7 +18,7 @@
 		}
 
 		public function setDiscount($num){
-			if($num < 1980){
+			if($num > 1980){
 				$this->discount = 40;
 			}
 		}
