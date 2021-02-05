@@ -27,12 +27,9 @@
 
 	foreach ($data as $libro) {
 		$book = new Book($libro['title'], $libro['author'], $libro['year'], $libro['plot']);
+		$book->setDiscount($book->year);
 		$arrayObj[] = $book;
 	}
-
-		foreach ($arrayObj as $obj) {
-			$obj->setDiscount($obj->year);
-		}
 	
 	var_dump($arrayObj);
 
